@@ -3,6 +3,7 @@
 
 __author__ = "Doris"
 
+
 class MainPage:
 
     @staticmethod
@@ -19,3 +20,9 @@ class MainPage:
     def login(driver):
         element = driver.find_element_by_xpath("html/body/section/div/div[3]/div[6]/button")
         return element
+
+    @staticmethod
+    def hints(driver):
+        element = driver.find_element_by_xpath(".//*[@id='errorInfo']/span")
+        text = element.text
+        return text
