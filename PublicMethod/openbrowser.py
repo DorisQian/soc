@@ -16,7 +16,6 @@ class OperationBrowser:
 
     def open_browser(self):
         self.driver.get('https://172.17.1.201/SOC2.0')
-#        self.driver.maximize_window()
         time.sleep(3)
 
     def close_browser(self):
